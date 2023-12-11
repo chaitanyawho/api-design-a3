@@ -1,0 +1,13 @@
+syntax = "proto3";
+package edu.cmu.cs.mse.apidesigna3.model.subreddit;
+
+message Subreddit {
+  string name = 1;
+  enum SubredditState {
+    PUBLIC = 0;
+    PRIVATE = 1;
+    HIDDEN = 2;
+  }
+  SubredditState state = 2;
+  repeated string tags = 3; // Assuming tags are represented as strings
+}

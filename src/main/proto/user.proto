@@ -1,0 +1,11 @@
+syntax = "proto3";
+package edu.cmu.cs.mse.apidesigna3.model.user;
+
+
+service UserService{
+
+}
+
+message User {
+  string user_id = 1;
+}
