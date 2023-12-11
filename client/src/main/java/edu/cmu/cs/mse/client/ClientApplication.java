@@ -1,8 +1,8 @@
 package edu.cmu.cs.mse.client;
 
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.Comment;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentServiceGrpc;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostServiceGrpc;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.Comment;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentServiceGrpc;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostServiceGrpc;
 import io.grpc.Grpc;
 import io.grpc.InsecureChannelCredentials;
 import io.grpc.ManagedChannel;

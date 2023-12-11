@@ -1,18 +1,18 @@
 package edu.cmu.cs.mse.client;
 
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.Comment;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.CommentWithRepliesInfo;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.ExpandCommentBranchRequest;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.ExpandCommentBranchResponse;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.GetMostUpvotedCommentsRequest;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.GetMostUpvotedCommentsResponse;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentServiceGrpc;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentServiceGrpc.CommentServiceBlockingStub;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.GetPostRequest;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.GetPostResponse;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.Post;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostServiceGrpc;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostServiceGrpc.PostServiceBlockingStub;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.Comment;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.CommentWithRepliesInfo;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.ExpandCommentBranchRequest;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.ExpandCommentBranchResponse;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.GetMostUpvotedCommentsRequest;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.GetMostUpvotedCommentsResponse;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentServiceGrpc;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentServiceGrpc.CommentServiceBlockingStub;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.GetPostRequest;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.GetPostResponse;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.Post;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostServiceGrpc;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostServiceGrpc.PostServiceBlockingStub;
 import java.util.List;
 import org.springframework.stereotype.Service;
 

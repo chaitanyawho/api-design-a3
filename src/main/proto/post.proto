@@ -5,6 +5,8 @@ service PostService {
   rpc CreatePost(CreatePostRequest) returns (CreatePostResponse) {};
   rpc VotePost(VotePostRequest) returns (VotePostResponse) {};
   rpc GetPost(GetPostRequest) returns (GetPostResponse) {};
+  //EXTRA CREDIT
+  rpc MonitorUpdates(stream MonitorUpdatesRequest) returns (stream MonitorUpdatesResponse) {};
 }
 
 message CreatePostRequest {
@@ -59,5 +61,16 @@ message Post {
   int64 publication_date = 7;
   string subreddit_name = 8;
   string content_url = 9;
+}
+//EXTRA CREDIT
+message MonitorUpdatesRequest {
+  string post_id = 1;
+  repeated string commentIds = 2;
+}
 
+message MonitorUpdatesResponse {
+  oneof entity_id {
+    string post_id = 1;
+    string comment_id = 2;
+  }  int32 score = 3;
 }

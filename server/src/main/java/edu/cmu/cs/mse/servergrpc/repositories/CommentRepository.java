@@ -1,8 +1,8 @@
 package edu.cmu.cs.mse.servergrpc.repositories;
 
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.Comment;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.Comment.CommentState;
-import edu.cmu.cs.mse.apidesigna3.model.comment.CommentOuterClass.CommentWithRepliesInfo;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.Comment;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.Comment.CommentState;
+import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.CommentWithRepliesInfo;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;

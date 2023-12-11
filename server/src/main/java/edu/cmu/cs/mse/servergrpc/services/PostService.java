@@ -1,13 +1,13 @@
 package edu.cmu.cs.mse.servergrpc.services;
 
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.CreatePostRequest;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.CreatePostResponse;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.GetPostRequest;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.GetPostResponse;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.Post;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.VotePostRequest;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.VotePostResponse;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostServiceGrpc;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.CreatePostRequest;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.CreatePostResponse;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.GetPostRequest;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.GetPostResponse;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.Post;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.VotePostRequest;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.VotePostResponse;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostServiceGrpc;
 import edu.cmu.cs.mse.servergrpc.repositories.PostRepository;
 import io.grpc.stub.StreamObserver;
 import java.time.Instant;

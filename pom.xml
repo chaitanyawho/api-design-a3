@@ -12,6 +12,7 @@
       </extension>
     </extensions>
     <plugins>
+      <!-- Uncomment this to generate code from proto files into /target/generated-sources
       <plugin>
         <artifactId>protobuf-maven-plugin</artifactId>
         <configuration>
@@ -32,6 +33,7 @@
         <groupId>org.xolstice.maven.plugins</groupId>
         <version>0.6.1</version>
       </plugin>
+      -->
     </plugins>
   </build>
 

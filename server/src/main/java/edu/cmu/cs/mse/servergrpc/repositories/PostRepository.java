@@ -1,7 +1,7 @@
 package edu.cmu.cs.mse.servergrpc.repositories;
 
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.Post;
-import edu.cmu.cs.mse.apidesigna3.model.post.PostOuterClass.Post.PostState;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.Post;
+import edu.cmu.cs.mse.apidesigna3.grpc.post.PostOuterClass.Post.PostState;
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;

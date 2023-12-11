@@ -1,6 +1,6 @@
 package edu.cmu.cs.mse.servergrpc.repositories;
 
-import edu.cmu.cs.mse.apidesigna3.model.subreddit.SubredditOuterClass.Subreddit;
+import edu.cmu.cs.mse.apidesigna3.grpc.subreddit.SubredditOuterClass.Subreddit;
 import java.util.List;
 
 public class SubredditRepository {
