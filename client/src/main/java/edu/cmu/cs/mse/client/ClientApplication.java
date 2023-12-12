@@ -1,8 +1,6 @@
 package edu.cmu.cs.mse.client;
 
 import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentOuterClass.Comment;
-import edu.cmu.cs.mse.apidesigna3.grpc.comment.CommentServiceGrpc;
-import edu.cmu.cs.mse.apidesigna3.grpc.post.PostServiceGrpc;
 import io.grpc.Grpc;
 import io.grpc.InsecureChannelCredentials;
 import io.grpc.ManagedChannel;
@@ -32,8 +30,8 @@ public class ClientApplication {
 			System.out.println(
 				"Which post would you like to view? Suggested: post123");
 			String pid = in.next();
-			ClientService service = new ClientService(PostServiceGrpc.newBlockingStub(channel),
-				CommentServiceGrpc.newBlockingStub(channel));
+			RedditClient redditClient = new RedditClient(channel);
+			ClientService service = new ClientService(redditClient);
 			Comment comment = service.highLevelFunction(pid);
 			if (comment == null) {
 				System.err.println("The given postId does not satisfy the function criteria.");
